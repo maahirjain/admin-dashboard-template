@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 1fr 4fr;
+    background-color: lightgray;
+    height: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: #4B9CD3;
+    grid-row: 1 / 3;
+}
+
+.nav {
+    background-color: white;
+}
