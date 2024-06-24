@@ -4,7 +4,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 3.5fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     background-color: lightgray;
     height: 100vh;
@@ -12,8 +12,44 @@ body {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     grid-row: 1 / 3;
     background-color: #4B9CD3;
+    color: white;
+    padding: 1.5rem;
+}
+
+.sidebar > div {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.sidebar > div:first-child {
+    margin-left: -0.75rem; 
+    margin-bottom: 2rem;
+}
+
+.sidebar > div:first-child > svg {
+    width: 30px;
+}
+
+.sidebar p {
+    font-weight: bold;
+}
+
+svg {
+    width: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: medium;
+    margin-top: auto;
 }
 
 .header {
