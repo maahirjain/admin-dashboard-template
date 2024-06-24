@@ -1,17 +1,85 @@
+* {
+    font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 3.5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     background-color: lightgray;
     height: 100vh;
     margin: 0;
 }
 
 .sidebar {
-    background-color: #4B9CD3;
     grid-row: 1 / 3;
+    background-color: #4B9CD3;
 }
 
 .nav {
     background-color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    grid-row: 1 / 3;
+}
+
+h3 {
+    margin: 0;
+}
+
+.projects > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+.projects > div > div {
+    flex-grow: 1;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.border {
+    height: 100%;
+    width: 100%;
+    border-left: 8px solid goldenrod;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.announcements > div {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 2rem;
+}
+
+.trending > div {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
 }
