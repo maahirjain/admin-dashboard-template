@@ -227,6 +227,10 @@ img[src="./icons/eye-outline.svg"] {
     right: 0;
 }
 
+a {
+    color: white;
+}
+
 @media only screen and (max-width: 1315px) {
     img[src="./icons/eye-outline.svg"], .trending > div > div svg:last-child {
       display: none;
